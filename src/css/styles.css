@@ -37,4 +37,52 @@
 
 .feedback-form{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+textarea{
+  overflow: hidden;
+  resize: none;
+  width: 360px;
+  height: 80px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  border-color: #808080;
+}
+
+input{
+width: 360px;
+height: 40px;
+border-radius: 4px;
+border-color: #808080;
+}
+
+.submit-btn{
+  background-color: #4e75ff;
+  width: 95px;
+  height: 40px;
+  border: none;
+  color: white;
+  border-radius: 7px;
+}
+
+label{
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+input:hover{
+  border-color: #000000;
+}
+
+textarea:hover{
+  border-color: #000000;
+}
+
+.submit-btn:hover{
+  background-color: #6c8cff;
 }
