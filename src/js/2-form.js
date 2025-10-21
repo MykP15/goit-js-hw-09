@@ -29,6 +29,22 @@ function populateForm() {
 function handlerSubmit(event){
   event.preventDefault();
 
+  const email = form.elements.email.value.trim();
+  const message = form.elements.message.value.trim();
+
+  if (!email) {
+    alert('Будь ласка, заповніть поле Email.');
+    return;
+  }
+
+  if (!message) {
+    alert('Будь ласка, заповніть поле Message.');
+    return;
+  }
+
+  const formData = {email, message};
+  
+  console.log(formData)
   event.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY)
 }
